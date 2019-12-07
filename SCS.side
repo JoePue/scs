@@ -1,0 +1,335 @@
+{
+  "id": "5b823732-50ac-44b1-9aa7-cec0c420cb1e",
+  "version": "2.0",
+  "name": "SCS",
+  "url": "https://www.settlerscombatsimulator.com/de",
+  "tests": [{
+    "id": "6f489a1d-69ea-4aa8-b210-13314310fb6f",
+    "name": "Heldenhaftes_GM3",
+    "commands": [{
+      "id": "d1c30096-3ca8-4b26-b194-3aca7fd3d3a1",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.settlerscombatsimulator.com/de",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "58fb2899-e307-47ba-a65d-a5b7af12f219",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1187x1085",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "39748ced-9d09-4d41-9494-ea036fdaa572",
+      "comment": "\"General\"-Click",
+      "command": "click",
+      "target": "css=.btn-block",
+      "targets": [
+        ["css=.btn-block", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='view-simulator-html5']/div[2]/div[2]/app-root/div/div/app-player/div/app-player-round/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'General ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "db33ab01-0dee-4979-bf6c-178dcc91d19f",
+      "comment": "\"General\"-Select(\"GM3\")",
+      "command": "click",
+      "target": "linkText=GM 3 (Generalmajor)",
+      "targets": [
+        ["linkText=GM 3 (Generalmajor)", "linkText"],
+        ["css=.show > .dropdown-item:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'GM 3 (Generalmajor)')]", "xpath:link"],
+        ["xpath=//div[@id='view-simulator-html5']/div[2]/div[2]/app-root/div/div/app-player/div/app-player-round/div/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0)')])[7]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'GM 3 (Generalmajor)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec1f2d9e-5d78-4fd8-9a7a-d7ddba75a022",
+      "comment": "AdventureBtn-MouseOver",
+      "command": "mouseOver",
+      "target": "id=adventures",
+      "targets": [
+        ["id=adventures", "id"],
+        ["css=#adventures", "css:finder"],
+        ["xpath=//button[@id='adventures']", "xpath:attributes"],
+        ["xpath=//div[@id='view-simulator-html5']/div[2]/div[2]/app-root/div/div/app-enemy/div/button", "xpath:idRelative"],
+        ["xpath=//app-enemy/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Heimatinsel')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5a9f8d3-6a68-499b-b10c-d05fe9b04ea0",
+      "comment": "AdventureBtn-Click",
+      "command": "click",
+      "target": "id=adventures",
+      "targets": [
+        ["id=adventures", "id"],
+        ["css=#adventures", "css:finder"],
+        ["xpath=//button[@id='adventures']", "xpath:attributes"],
+        ["xpath=//div[@id='view-simulator-html5']/div[2]/div[2]/app-root/div/div/app-enemy/div/button", "xpath:idRelative"],
+        ["xpath=//app-enemy/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Heimatinsel')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ccac3f4-1810-4b73-b55f-52e33f778d6b",
+      "comment": "AdventureFilterIpt-Click",
+      "command": "click",
+      "target": "xpath=//div[@id='filter']/input",
+      "targets": [
+        ["css=#filter > .form-control", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='filter']/input", "xpath:idRelative"],
+        ["xpath=//app-adventures-modal/div/div/div/div[2]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec529224-5a0b-48bf-8f91-6fd6bc953e38",
+      "comment": "AdventureFilterIpt-Type",
+      "command": "type",
+      "target": "xpath=//div[@id='filter']/input",
+      "targets": [
+        ["css=.ng-touched", "css:finder"],
+        ["xpath=(//input[@type='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='filter']/input", "xpath:idRelative"],
+        ["xpath=//app-adventures-modal/div/div/div/div[2]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "helden"
+    }, {
+      "id": "d5f951b8-42ba-4c88-97c4-d158e8be7757",
+      "comment": "AdvLink-Click",
+      "command": "click",
+      "target": "linkText=Das heldenhafte Schneiderlein",
+      "targets": [
+        ["linkText=Das heldenhafte Schneiderlein", "linkText"],
+        ["css=.col-md-3 .list-group-item", "css:finder"],
+        ["xpath=//a[contains(text(),'Das heldenhafte Schneiderlein')]", "xpath:link"],
+        ["xpath=//div[@id='adventures-modal']/div/div/div[2]/div/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0)')])[18]", "xpath:href"],
+        ["xpath=//div[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Das heldenhafte Schneiderlein')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f852e33c-c1c9-4eb8-88b5-79bd8ca6d5e0",
+      "comment": "OptimalerAngreifer-MouseOver",
+      "command": "mouseOver",
+      "target": "id=optimizer",
+      "targets": [
+        ["id=optimizer", "id"],
+        ["name=optimizer", "name"],
+        ["css=#optimizer", "css:finder"],
+        ["xpath=//input[@id='optimizer']", "xpath:attributes"],
+        ["xpath=//div[@id='view-simulator-html5']/div[2]/div[2]/app-root/div/div/app-options/app-option-configuration/div/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9160ec3-dc66-4333-8d66-f47c7cb52d90",
+      "comment": "OptimalerAngreifer-Click",
+      "command": "click",
+      "target": "id=optimizer",
+      "targets": [
+        ["id=optimizer", "id"],
+        ["name=optimizer", "name"],
+        ["css=#optimizer", "css:finder"],
+        ["xpath=//input[@id='optimizer']", "xpath:attributes"],
+        ["xpath=//div[@id='view-simulator-html5']/div[2]/div[2]/app-root/div/div/app-options/app-option-configuration/div/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ae7921a-f0d3-4b83-8dd6-c2a32fc68308",
+      "comment": "OptimalerAngreifer-MouseOut",
+      "command": "mouseOut",
+      "target": "id=optimizer",
+      "targets": [
+        ["id=optimizer", "id"],
+        ["name=optimizer", "name"],
+        ["css=#optimizer", "css:finder"],
+        ["xpath=//input[@id='optimizer']", "xpath:attributes"],
+        ["xpath=//div[@id='view-simulator-html5']/div[2]/div[2]/app-root/div/div/app-options/app-option-configuration/div/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6257431-d1b1-4c0a-ae39-31f8cfdd5ba8",
+      "comment": "\"Nur mit maximaler Einheitenanzahl angreifen\"-Over",
+      "command": "mouseOver",
+      "target": "id=maxUnitsOnly",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8513aac0-393a-49bb-a8bf-91ec95bd1521",
+      "comment": "\"Nur mit maximaler Einheitenanzahl angreifen\"-Click",
+      "command": "click",
+      "target": "id=maxUnitsOnly",
+      "targets": [
+        ["id=maxUnitsOnly", "id"],
+        ["name=fullArmy", "name"],
+        ["css=#maxUnitsOnly", "css:finder"],
+        ["xpath=//input[@id='maxUnitsOnly']", "xpath:attributes"],
+        ["xpath=//div[@id='view-simulator-html5']/div[2]/div[2]/app-root/div/div/app-options/app-option-configuration/div/div[2]/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "554db831-b9de-4af6-b725-09d9e99bce4e",
+      "comment": "CampBtn-Click",
+      "command": "click",
+      "target": "id=camps",
+      "targets": [
+        ["id=camps", "id"],
+        ["css=#camps", "css:finder"],
+        ["xpath=//button[@id='camps']", "xpath:attributes"],
+        ["xpath=//div[@id='view-simulator-html5']/div[2]/div[2]/app-root/div/div/app-enemy/div/button[2]", "xpath:idRelative"],
+        ["xpath=//app-enemy/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Camp #40')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c425dca-eb17-4826-ba26-8f36d71ac26c",
+      "comment": "CampNmbr-Btn-mouseover",
+      "command": "mouseOver",
+      "target": "//a[contains(@class,'camp-id') and text() = '1']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "11782b69-ae1d-47bb-b4e2-6cbbe7b33a66",
+      "comment": "CampNmbr-Btn-Click",
+      "command": "click",
+      "target": "//a[contains(@class,'camp-id') and text() = '1']",
+      "targets": [
+        ["css=.camp-hotspot-normal-over > .fill-div", "css:finder"],
+        ["xpath=(//a[contains(text(),'1')])[17]", "xpath:link"],
+        ["xpath=//div[@id='map-container']/div[2]/a", "xpath:idRelative"],
+        ["xpath=//div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b0f086a-30c0-472d-90ac-6c557883cdf6",
+      "comment": "SimulationBtn-MouseOver",
+      "command": "mouseOver",
+      "target": "xpath=//button[contains(.,'Simulation Starten')]",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[85]", "xpath:attributes"],
+        ["xpath=//div[@id='view-simulator-html5']/div[2]/div[2]/app-root/div/div/app-options/app-option-buttons/form/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Simulation Starten')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6fee97ad-b07e-4765-bc85-962b1a4230ea",
+      "comment": "RekrutenButtonMaxBtn-Click",
+      "command": "//click",
+      "target": "xpath=(//button[contains(@class, 'btn-sm') and ./fa-icon[contains(@icon, 'long-arrow-alt-up')]])[1]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4abe3d15-fed0-4a77-8cd6-3c27039f117a",
+      "comment": "SoldatenMaxBtn-Click",
+      "command": "click",
+      "target": "css=app-player-round-unit-finder:nth-child(3) .btn:nth-child(1)",
+      "targets": [
+        ["css=app-player-round-unit-finder:nth-child(3) .btn:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[42]", "xpath:attributes"],
+        ["xpath=//div[@id='view-simulator-html5']/div[2]/div[2]/app-root/div/div/app-player/div/app-player-round/div[2]/div[2]/app-player-round-unit-finder[3]/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//app-player-round-unit-finder[3]/div/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5012a44d-9faf-49e8-ac49-c338773215fc",
+      "comment": "ReiterMaxBtn-Click",
+      "command": "click",
+      "target": "css=app-player-round-unit-finder:nth-child(5) .btn:nth-child(1)",
+      "targets": [
+        ["css=app-player-round-unit-finder:nth-child(5) .btn:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[48]", "xpath:attributes"],
+        ["xpath=//div[@id='view-simulator-html5']/div[2]/div[2]/app-root/div/div/app-player/div/app-player-round/div[2]/div[2]/app-player-round-unit-finder[5]/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//app-player-round-unit-finder[5]/div/div/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a000584f-f3b3-4acd-9766-b297a5ab42f6",
+      "comment": "KanonierMaxBtn-Click",
+      "command": "click",
+      "target": "css=app-player-round-unit-finder:nth-child(9) .btn:nth-child(1) .svg-inline--fa",
+      "targets": [
+        ["css=app-player-round-unit-finder:nth-child(9) .btn:nth-child(1) .svg-inline--fa", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "59d4f392-24c1-4adf-ae25-42a4a99afda4",
+      "comment": "ArmbrustMaxBtn-Click",
+      "command": "click",
+      "target": "css=app-player-round-unit-finder:nth-child(8) .btn:nth-child(1) > .ng-fa-icon",
+      "targets": [
+        ["css=app-player-round-unit-finder:nth-child(8) .btn:nth-child(1) > .ng-fa-icon", "css:finder"],
+        ["xpath=//div[@id='view-simulator-html5']/div[2]/div[2]/app-root/div/div/app-player/div/app-player-round/div[2]/div[2]/app-player-round-unit-finder[8]/div/div/div/div/button/fa-icon", "xpath:idRelative"],
+        ["xpath=//app-player-round-unit-finder[8]/div/div/div/div/button/fa-icon", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8439c66-e68f-4922-bb9c-25307c87043c",
+      "comment": "SimulationBtn-Click",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Simulation Starten')]",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[85]", "xpath:attributes"],
+        ["xpath=//div[@id='view-simulator-html5']/div[2]/div[2]/app-root/div/div/app-options/app-option-buttons/form/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Simulation Starten')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "463613d2-4e1e-4af6-81f3-694d2349e170",
+      "comment": "WarteAufSimulationsEnde",
+      "command": "waitForElementPresent",
+      "target": "xpath=//button[contains(.,'Simulation Starten')]",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "576dcd0d-3af6-42b3-8d4a-c4c072b47b82",
+      "comment": "",
+      "command": "runScript",
+      "target": "﻿for(var k = 5; k > 0; k--) {   for(var i = 0, l = document.images.length; i < l; i++) {     var appImg = document.images[i];     if (appImg != null && appImg.parentNode != null) {       var appParentNode = appImg.parentNode;       var imgSrc = appImg.src;       var addText = \" \";       if (imgSrc.endsWith(\"/uniticons/swordsman.png\")) {         appParentNode.textContent = appParentNode.textContent.trim() + \"SK\" + addText;         appImg.src = \"\"; imgSrc = \"\";       } else if (imgSrc.endsWith(\"assets/img/uniticons/mounted_swordsman.png\")) {         appParentNode.textContent = appParentNode.textContent.trim() + \"BSK\" + addText;         appImg.src = \"\"; imgSrc = \"\";       } else if (imgSrc.endsWith(\"assets/img/uniticons/marksman.png\")) {         appParentNode.textContent = appParentNode.textContent.trim() + \"SSch\" + addText;         appImg.src = \"\"; imgSrc = \"\";       } else if (imgSrc.endsWith(\"assets/img/uniticons/knight.png\")) {         appParentNode.textContent = appParentNode.textContent.trim() + \"RI\" + addText;         appImg.src = \"\"; imgSrc = \"\";       } else if (imgSrc.endsWith(\"assets/img/uniticons/armored_marksman.png\")) {         appParentNode.textContent = appParentNode.textContent.trim() + \"GSS\" + addText;         appImg.src = \"\"; imgSrc = \"\";       } else if (imgSrc.endsWith(\"assets/img/uniticons/mounted_marksman.png\")) {         appParentNode.textContent = appParentNode.textContent.trim() + \"BSS\" + addText;         appImg.src = \"\"; imgSrc = \"\";       } else if (imgSrc.endsWith(\"assets/img/uniticons/besieger.png\")) {         appParentNode.textContent = appParentNode.textContent.trim() + \"BL\" + addText;         appImg.src = \"\"; imgSrc = \"\";       } else if (imgSrc.endsWith(\"assets/img/uniticons/resource_general_nusala.png\")) {         appParentNode.textContent = \"Nus\" + addText;         appImg.src = \"\"; imgSrc = \"\";       } else if (imgSrc.endsWith(\"assets/img/uniticons/resource_general_vargus.png\")) {         appParentNode.textContent = \"Var\" + addText;         appImg.src = \"\"; imgSrc = \"\";       } else if (imgSrc.endsWith(\"assets/img/uniticons/resource_general_anslem.png\")) {         appParentNode.textContent = \"Ans\" + addText;         appImg.src = \"\"; imgSrc = \"\";       } else if (imgSrc.endsWith(\"assets/img/uniticons/resource_specialist_major_general.png\")) {         appParentNode.textContent = \"GM\" + addText;         appImg.src = \"\"; imgSrc = \"\";       } else if (imgSrc.endsWith(\"assets/img/uniticons/borisgeneral_resource_friendly.png\")) {         appParentNode.textContent = \"Bor\" + addText;         appImg.src = \"\"; imgSrc = \"\";       } else if (imgSrc.endsWith(\"assets/img/uniticons/icon_recruit.png\")) {         appParentNode.textContent = appParentNode.textContent.trim() + \"R\"+ addText;         appImg.src = \"\"; imgSrc = \"\";       } else if (imgSrc.endsWith(\"assets/img/uniticons/icon_militia.png\")) {         appParentNode.textContent = appParentNode.textContent.trim() + \"M\"+ addText;         appImg.src = \"\"; imgSrc = \"\";       } else if (imgSrc.endsWith(\"assets/img/uniticons/icon_soldier.png\")) {         appParentNode.textContent = appParentNode.textContent.trim() + \"S\" + addText;         appImg.src = \"\"; imgSrc = \"\";       } else if (imgSrc.endsWith(\"assets/img/uniticons/icon_elite_soldier.png\")) {         appParentNode.textContent = appParentNode.textContent.trim() + \"ES\"+ addText;         appImg.src = \"\"; imgSrc = \"\";       } else if (imgSrc.endsWith(\"assets/img/uniticons/icon_cavalry.png\")) {         appParentNode.textContent = appParentNode.textContent.trim() + \"C\" + addText;         appImg.src = \"\"; imgSrc = \"\";       } else if (imgSrc.endsWith(\"assets/img/uniticons/icon_cannoneer.png\")) {         appParentNode.textContent = appParentNode.textContent.trim() + \"K\" + addText;         appImg.src = \"\"; imgSrc = \"\";       } else if (imgSrc.endsWith(\"assets/img/uniticons/icon_bowman.png\")) {         appParentNode.textContent = appParentNode.textContent.trim() + \"BS\" + addText;         appImg.src = \"\"; imgSrc = \"\";       } else if (imgSrc.endsWith(\"assets/img/uniticons/icon_longbowman.png\")) {         appParentNode.textContent = appParentNode.textContent.trim() + \"LB\" + addText;         appImg.src = \"\"; imgSrc = \"\";       } else if (imgSrc.endsWith(\"assets/img/uniticons/icon_crossbowman.png\")) {         appParentNode.textContent = appParentNode.textContent.trim() + \"AB\" + addText;         appImg.src = \"\"; imgSrc = \"\";       }     }   } }",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7f5fcb6b-1a0c-41ee-be5c-e29fb2e15cef",
+      "comment": "",
+      "command": "echo",
+      "target": "",
+      "targets": [],
+      "value": "Hello"
+    }, {
+      "id": "bbd6a841-f812-43c8-b411-0bda19eec57b",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "88577185-2664-4950-a8d8-4ae9c3c42f96",
+    "name": "two",
+    "commands": []
+  }],
+  "suites": [{
+    "id": "c813d177-7a25-4d22-bfee-97f76ff9a3ce",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6f489a1d-69ea-4aa8-b210-13314310fb6f"]
+  }],
+  "urls": ["https://www.settlerscombatsimulator.com/de"],
+  "plugins": []
+}
